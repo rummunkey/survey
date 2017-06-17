@@ -10,6 +10,7 @@ form {
     width: 60%;
     height: 80%;
     background-color: #eae8b6;
+    z-index: +2;
 }
 
 input[type=text] {
