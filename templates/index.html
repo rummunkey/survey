@@ -7,6 +7,14 @@
     </head>
 
     <body>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
         <form class="dojo" action="/result" method="post">
             <!-- <h1>Registration Form</h1> -->
             <table>
